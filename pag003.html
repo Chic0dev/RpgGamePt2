@@ -1,0 +1,42 @@
+<!doctype html >
+<html lang= "pt-br">
+<head>
+	<meta charset="utf-8"> </meta>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>filme</title>
+	<link rel="stylesheet" type="text/css" href="estilo003.css">
+
+</head>
+<body>
+	
+	
+
+		<img id="imagem" src ="tela.jpeg"  />
+
+			<div class="container">
+ 
+  
+        
+</div>
+	<a href="filme.mp4" rel="next" target="_self"><button class="botao"><b>assistir</b></button></a>
+
+<script>
+  document.getElementById('botao').addEventListener('click', function() {
+    var elemento = document.documentElement;
+    if (elemento.requestFullscreen) {
+      elemento.requestFullscreen();
+    } else if (elemento.mozRequestFullScreen) { // Firefox
+      elemento.mozRequestFullScreen();
+    } else if (elemento.webkitRequestFullscreen) { // Chrome, Safari e Opera
+      elemento.webkitRequestFullscreen();
+    } else if (elemento.msRequestFullscreen) { // Internet Explorer e Edge
+      elemento.msRequestFullscreen();
+    }
+  });
+</script>
+
+	
+	
+
+</body>
+
